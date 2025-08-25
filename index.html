@@ -1,0 +1,87 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page Logo + Texte</title>
+
+  <!-- Police Neulis Cursive via Adobe Fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/nnc8mxn.css">
+
+  <style>
+    :root {
+      --bg: #c3d0ec;
+      --font: "neulis-cursive", cursive; /* Défini par Adobe */
+      --text-color: #241f49;
+    }
+
+    html, body {
+      height: 115%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg);
+      font-family: var(--font);
+      color: var(--text-color);
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo {
+      max-width: 300px; /* Logo plus grand sur ordinateur */
+      height: auto;
+      margin-bottom: 1.5rem;
+    }
+
+    .texte {
+      max-width: 550px;
+      font-size: 1.6rem;
+      line-height: 3.2;  /* Espacement doublé */
+      font-weight: 550;  /* Regular */
+      color: var(--text-color);
+    }
+
+    /* Version mobile */
+    @media (max-width: 600px) {
+      .logo {
+        max-width: 150px; /* Logo réduit sur smartphone */
+      }
+      .texte {
+        font-size: 1.2rem;
+        line-height: 2.4;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Remplace l'URL par ton logo -->
+    <img src="Sans titre - 1.png" 
+         alt="Ombre graphique" 
+         class="logo" />
+
+    <div class="texte">
+       <p>CRÉATION DE LOGO : 250€</p>
+  <p>MODERNISATION DE LOGO : 100€</p>
+  <p>RETRAÇAGE DE LOGO : 50€</p>
+  <p>CONCEPTION DE FLYERS, AFFICHES : 250€</p>
+  <p>CONCEPTION DE CARTES DE VISITE : 100€</p>
+  <p>APRÈS PLUS DE 4 MODIFICATIONS : 50€, 
+ÉGALEMENT SI CHANGEMENT TOTAL D’IDÉES.</p>
+  
+    </div>
+  </div>
+</body>
+</html>
